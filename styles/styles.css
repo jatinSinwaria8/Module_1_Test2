@@ -1,0 +1,371 @@
+/* provided fonts import */
+@font-face {
+  font-family: NoticaBold;
+  src: url(../fonts/NoticiaText-Bold.woff);
+}
+
+@font-face {
+  font-family: WorkSans;
+  src: url(../fonts/WorkSans-Regular.woff);
+}
+
+/* Defaulting margin 0 padding 0 and box sizing border box.*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: WorkSans;
+}
+
+/* Container max width size define. */
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* about section stylings start */
+.about-mob {
+  padding-top: 90px;
+  padding-bottom: 40px;
+  background-color: #78c51c;
+}
+
+.about-mob-wrapper {
+  background-color: #2a6b2c;
+  padding: 60px;
+  display: flex;
+  border-radius: 16px;
+}
+
+/* about us image styling */
+.about-us-image {
+  margin-right: 120px;
+}
+
+.about-us-image img {
+  width: 100%;
+}
+
+/* about us content div stylings */
+.about-us-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* universal above heading styling */
+.above-heading {
+  color: #c8f169;
+  font-size: 16px;
+  padding-top: 5px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* universal heading styling */
+.heading {
+  color: #eef2e3;
+  font-size: 54px;
+  margin-bottom: 21px;
+  font-family: NoticaBold;
+}
+
+/* universal paragraph styling */
+.paragraph {
+  color: #eef2e3;
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.35;
+  font-family: WorkSans;
+}
+
+.about-us-content button {
+  margin-top: auto;
+}
+
+/* universal button styling */
+button {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #eef2e3;
+  color: #eef2e3;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: WorkSans;
+  width: fit-content;
+  transform: translateY(-5px);
+}
+
+/* button hover */
+button:hover {
+  background-color: #eef2e3;
+  color: #2a6b2c;
+}
+
+/* morgern bussiness section stylings */
+.mordern-business {
+  padding-bottom: 90px;
+  background-color: #78c51c;
+}
+
+.mordern-business-wrapper {
+  background-color: #2a6b2c;
+  padding: 60px;
+  display: flex;
+  border-radius: 16px;
+  padding-right: 55px;
+}
+
+/* business content stylings */
+.business-content {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+/* above heading tweaking */
+.business-content .above-heading {
+  padding-top: 78px;
+  margin-bottom: 15px;
+}
+
+/* heading tweaking */
+.business-content .heading {
+  font-size: 52px;
+  margin-bottom: 30px;
+}
+
+/* paragraph tweaking */
+.business-content .paragraph {
+  margin-bottom: 40px;
+  text-wrap: nowrap;
+}
+
+/* button tweaking */
+.business-content button {
+  margin-bottom: 80px;
+}
+
+/* bussiness grid stylings */
+.business-grid {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+
+/* all grid boxes same stylings */
+.grid-box {
+  background-color: #c8f169;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 15px;
+  border-radius: 25px;
+  border: 10px solid #2a6b2c;
+}
+
+/* logo inside grid boxes styling */
+.grid-box img {
+  width: 24px;
+  margin-bottom: 10px;
+}
+
+/* text inside grid boxes styling */
+.grid-box p {
+  color: #043f2e;
+  font-weight: bold;
+  font-size: 16px;
+  text-wrap: nowrap;
+}
+
+/* individual boxes stylings */
+.box1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.above-2 {
+  grid-column-start: 4;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  position: relative;
+  z-index: 6;
+}
+
+/* .above-2::after connects above-2 and box 2 */
+.above-2::after {
+  content: "";
+  position: absolute;
+  background-color: #c8f169;
+  height: 30%;
+  width: 55.2%;
+  bottom: 0;
+  left: 0;
+  transform: translateY(75%);
+}
+
+.box2 {
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 4;
+  grid-row-end: 8;
+  z-index: 5;
+}
+
+.above-3 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 8;
+  position: relative;
+  z-index: 4;
+}
+
+/* .above-3::after connects above-3 and box 3 */
+.above-3::after {
+  content: "";
+  position: absolute;
+  background-color: #c8f169;
+  height: 50%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: translateY(70%);
+}
+
+.box3 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 8;
+  grid-row-end: 11;
+  z-index: 2;
+}
+
+.box4 {
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 8;
+  grid-row-end: 11;
+}
+
+.box5 {
+  grid-column-start: 8;
+  grid-column-end: 11;
+  grid-row-start: 4;
+  grid-row-end: 11;
+  z-index: 7;
+}
+
+/* media queries start here */
+
+/* media query for screen size less than 1260px */
+@media (max-width: 1260px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .about-mob-wrapper {
+    flex-direction: column;
+    gap: 75px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about-us-image {
+    align-self: center;
+    margin-right: 0px;
+  }
+
+  .about-us-image img {
+    height: 100%;
+  }
+
+  /* about us content div stylings */
+  .about-us-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .mordern-business-wrapper {
+    flex-direction: column;
+    padding: 75px 0px;
+    align-items: center;
+  }
+
+  /* business content stylings */
+  .business-content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+  }
+
+  .business-grid {
+    width: 90%;
+    height: 750px;
+  }
+
+  .business-content {
+    margin: 0;
+  }
+}
+
+/* media query for screen size less than 992px */
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .business-grid {
+    width: 75%;
+    height: 500px;
+  }
+
+  /* logo inside grid boxes styling */
+  .grid-box img {
+    width: 18px;
+  }
+
+  /* text inside grid boxes styling */
+  .grid-box p {
+    font-size: 12px;
+  }
+}
+
+/* media query for screen size less than 768px */
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .business-grid {
+    width: 90%;
+    height: 450px;
+  }
+}
+/* media query for screen size less than 576px */
+@media (max-width: 576px) {
+  .container {
+    max-width: unset;
+    padding: 0 20px;
+  }
+
+  .business-grid {
+    width: 90%;
+    height: 400px;
+  }
+  .grid-box p {
+    font-size: 14px;
+    text-wrap: wrap;
+  }
+}
